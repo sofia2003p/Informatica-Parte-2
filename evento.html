@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #puntaje{
+            font-family: Arial, Helvetica, sans-serif;
+            border: 2px solid;
+            border-color: blue;
+            margin-right: 38%;
+        }
+        body{
+            align-self: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 5%;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: royalblue">Juego</h1>
+    <p>El objetivo del juego es tocar cualquiera de las márgenes con ayuda de las teclas
+        w, a, d, s, z y x. Si consigue tocar una esquina logrará obtener dos puntos de una sola vez.
+    </p>
+    <h4><i>Puntaje</i> </h4>
+    <h3 id="puntaje"></h3>
+    <canvas id="canvas1" width="400px" height="400px"></canvas>
+    <script src="evento.js"></script>
+</body>
+</html>
