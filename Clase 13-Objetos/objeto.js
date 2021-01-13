@@ -14,16 +14,16 @@ function estudiante(nombre, edad, curso, notas){
     }),
     (this.promedio = function(){
         let suma = 0;
-        for(nota of notas){
+        for(nota of this.notas){
             suma+=nota;
         }
-        let promedio = suma/notas.lenght;
+        let promedio = suma/notas.length;
         console.log(promedio);
     })
 }
-let estudiante1 = new estudiante("Valentina", 16, "Terza Liceo", []);
-let estudiante2 = new estudiante("Camila", 17, "Terza Liceo", []);
-let estudiante3 = new estudiante("Mariana", 15, "Terza Liceo", []);
+let estudiante1 = new estudiante("Valentina", 16, "Terza Liceo", [5,7, 6, 7, 7, 6.5, 7, 6.5]);
+let estudiante2 = new estudiante("Camila", 17, "Terza Liceo", [10, 9, 8, 9.5, 8.7, 7.8, 8.4]);
+let estudiante3 = new estudiante("Mariana", 15, "Terza Liceo", [8, 7, 6.5, 7, 6.7, 7.4, 7.8, 9, 6]);
 function carro(marca, modelo, año, kilometraje, kpg){
     this.marca = marca;
     this.modelo = modelo;
