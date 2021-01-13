@@ -1,4 +1,3 @@
-let notas = [];
 function estudiante(nombre, edad, curso, notas){
     this.nombre = nombre;
     this.edad = edad;
@@ -16,6 +15,7 @@ function estudiante(nombre, edad, curso, notas){
         let suma = 0;
         for(nota of this.notas){
             suma+=nota;
+            // suma=suma+nota; 
         }
         let promedio = suma/notas.length;
         console.log(promedio);
@@ -23,7 +23,7 @@ function estudiante(nombre, edad, curso, notas){
 }
 let estudiante1 = new estudiante("Valentina", 16, "Terza Liceo", [5,7, 6, 7, 7, 6.5, 7, 6.5]);
 let estudiante2 = new estudiante("Camila", 17, "Terza Liceo", [10, 9, 8, 9.5, 8.7, 7.8, 8.4]);
-let estudiante3 = new estudiante("Mariana", 15, "Terza Liceo", [8, 7, 6.5, 7, 6.7, 7.4, 7.8, 9, 6]);
+let estudiante3 = new estudiante("Mariana", 15, "Terza Liceo", [8,7,9,7, 8]);
 function carro(marca, modelo, año, kilometraje, kpg){
     this.marca = marca;
     this.modelo = modelo;
@@ -41,8 +41,8 @@ function carro(marca, modelo, año, kilometraje, kpg){
     }),
     (this.mostrarInformacion = function (){
         console.log (this.marca, this.modelo, this.año, this.kilometraje, this.kpg);
-    })
+    })//poner parentesis en las funciones y si no llenarlo con lo que requiere
 }
 let carro1 = new carro("Chevrolet", "Tracker", 2017, 5000, 27);
 let carro2 = new carro("Ford", "EcoSport", 2020, 0, 50);
-let carro3 = new carro("Audi", "A4", 2018, 10700, 42);
+let carro3 = new carro("Audi", "A4", 2018, 107000, 42);
