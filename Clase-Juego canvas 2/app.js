@@ -259,8 +259,8 @@ GAME.setup = function(){
     player12:new Corcho(1200, 400, 30, 60, 80),player13:new Corcho(1200, 460, 30, 60, 80),
     player14:new Corcho(1200, 520, 30, 60, 80), player15:new Corcho(1200, 580, 30, 60, 80),}
     crearCarros();
-    GAME.score = 5;
-    GAME.nitros = 4;
+    GAME.score = 2;
+    GAME.nitros = 5;
     GAME.tiempoTotal = 18000;// 20 seconds
     GAME.tiempoRestante = GAME.tiempoTotal;// 20 seconds
     GAME.initialTime = window.performance.now();
