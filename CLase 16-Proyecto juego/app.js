@@ -246,7 +246,7 @@ function crearCarros(){
     GAME.objects.carros.push(new Carro(800, 800, -150+250*Math.random(), 100, 80, GAME.images.carro2))
 }
 GAME.setup = function(){
-    GAME.objects ={carros:[], player:new Venado(10, 300, 30, 50,70), player1: new Clock(50, 50, 3, 3, 20, 20),
+    GAME.objects ={carros:[], player:new Venado(10, 300, 60, 50,70), player1: new Clock(50, 50, 3, 3, 20, 20),
         player2:new Calle(400, 300, 30, 120, 1000), 
         player3:new Calle(800, 300, 30, 120, 1000), player4:new Calle(550, 300, 30, 120, 1000),
     player5: new Bosque(1200, 568, 30, 600, 70), 
