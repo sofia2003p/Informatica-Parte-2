@@ -316,7 +316,7 @@ GAME.draw =  function(){
     }
     // Si alguna de las particulas se salió, y aún no tiene 10 puntos
     // pierde
-    if (GAME.objects.player.x >= 1200){
+    if (GAME.objects.player.x >= 1100){
         // detener el juego
         GAME.pause();
         // muestrar el mensaje de que perdio
