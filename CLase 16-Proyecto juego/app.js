@@ -259,7 +259,7 @@ player18: new Clock(600, 550, 5, 5, 20, 20)}
     crearCarros();
     GAME.score = 2;
     GAME.nitros = 5;
-    GAME.tiempoTotal = 18000;// 20 seconds
+    GAME.tiempoTotal = 20000;// 20 seconds
     GAME.tiempoRestante = GAME.tiempoTotal;// 20 seconds
     GAME.initialTime = window.performance.now();
 }
@@ -422,7 +422,7 @@ function teclaPresionada(e){
         if (GAME.nitros > 0)
         {
             console.log("increasing speed")
-            GAME.objects.player.speed = 100;
+            GAME.objects.player.speed = 200;
             GAME.nitros -= 1;
             window.setTimeout(resetSpeed, 1000);
         }
